@@ -108,7 +108,7 @@ public class InterfaceUsuario {
         }
 
     }
-
+//usa um bubble sort para ordenar de forma decrescente baseado no numero de dias da estadia do hospede
     private static void ordenaReservas(){
 
         for(int i = 0; i < listaReservas.length; i++){
