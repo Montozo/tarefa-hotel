@@ -110,16 +110,16 @@ public class InterfaceUsuario {
     }
 //usa um bubble sort para ordenar de forma decrescente baseado no numero de dias da estadia do hospede
     private static void ordenaReservas(){
-
+        Reserva aux;
         for(int i = 0; i < listaReservas.length; i++){
             for(int j = i; j < listaReservas.length; j++){
                 if (listaReservas[j] == null || listaReservas[i] == null){
                     continue;
                 }
                 if(listaReservas[j].getNumeroDias() > listaReservas[i].getNumeroDias()){
-                    int aux = listaReservas[i].getNumeroDias();
-                    listaReservas[i].setNumeroDias(listaReservas[j].getNumeroDias());
-                    listaReservas[j].setNumeroDias(aux);
+                    aux = listaReservas[i];
+                    listaReservas[i] = listaReservas[j];
+                    listaReservas[j] = aux;
                 }
             }
         }

@@ -26,6 +26,7 @@ public class Reserva {
     public int getNumeroDias() {
         return numeroDias;
     }
+
     public double getValordiaria() {
         return valordiaria;
     }
